@@ -1,0 +1,6 @@
+django
+djangorestframework
+markdown
+django-filter
+dj-rest-auth
+drf-spectacular
