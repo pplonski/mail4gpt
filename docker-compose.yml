@@ -20,7 +20,6 @@ services:
         expose:
             - 8000     
         environment:
-            DEBUG: "False"
             SECRET_KEY: ${SECRET_KEY}
             EMAIL_ADDRESS: ${EMAIL_ADDRESS}
             EMAIL_PASSWORD: ${EMAIL_PASSWORD}
