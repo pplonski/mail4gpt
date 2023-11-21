@@ -13,7 +13,7 @@ done
 
 echo "Your auth token"
 python manage.py adduser
-
+export DEBUG=False
 gunicorn backend.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
 
 # for debug
