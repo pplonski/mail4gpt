@@ -62,6 +62,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Connect ChatGPT with your mail',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+    'SERVERS': ["https://api.mail4gpt.com"]
 }
 
 SITE_ID = 1
