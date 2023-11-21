@@ -4,3 +4,4 @@ markdown
 django-filter
 dj-rest-auth
 drf-spectacular
+python-dotenv

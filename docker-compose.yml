@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+    nginx: 
+        restart: unless-stopped
+        image: nginx:stable-alpine
+        ports:
+            - 80:80
+        volumes:
+            - ./docker/nginx:/etc/nginx/conf.d
+        depends_on: 
+            - server
+        command: "/bin/sh -c 'nginx -g \"daemon off;\"'"
+    server:
+        restart: unless-stopped
+        build:
+            context: .
+            dockerfile: ./docker/server/Dockerfile            
+        entrypoint: /app/docker/server/entrypoint.sh
+        expose:
+            - 8000     
+        environment:
+            DEBUG: "False"
+            SECRET_KEY: ${SECRET_KEY}
+            EMAIL_ADDRESS: ${EMAIL_ADDRESS}
+            EMAIL_PASSWORD: ${EMAIL_PASSWORD}
+            IMAP_ADDRESS: ${IMAP_ADDRESS}
+            IMAP_PORT: ${IMAP_PORT}
+            SMTP_ADDRESS: ${SMTP_ADDRESS}
+            SMTP_PORT: ${SMTP_PORT}
+            
