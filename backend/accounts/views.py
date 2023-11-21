@@ -39,7 +39,7 @@ class ReadEmail(APIView):
     )
     def post(self, request, format=None):
         latest_count = int(request.data.get("latest_count", 5))
-        show_unseen = request.data.get("show_unseen", "true").lower() == "true"
+        show_unseen = request.data.get("show_unseen", True)
         criteria = "UNSEEN" if show_unseen else "ALL"
         m = EmailService()
         emails = m.get_emails(criteria=criteria, latest_count=latest_count)
