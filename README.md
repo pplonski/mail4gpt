@@ -1,6 +1,6 @@
 # Manage your email in ChatGPT ✉️🦜
 
-REST API service for ChatGPT to access your email. Wouldn't it be fanstastic if you could access your email in ChatGPT? 
+Wouldn't it be fantastic if you could access your email in ChatGPT?
 
 It is possible! 
 
