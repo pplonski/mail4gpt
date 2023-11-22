@@ -1,15 +1,21 @@
 # Manage your email in ChatGPT ✉️🦜
 
-REST API service for ChatGPT to access your email. Wouldn't it be fanstastic if you could access your email in ChatGPT? With custom GPT builder and Actions it is possible. This repository contains server that gives access to your email by REST API. The ChatGPT can interact with it. This server makes access to **only one** email address. It should be configured in `.env` file. See details below. This server gives access to email reading/sending by auth token that is created when server is starting. 
+REST API service for ChatGPT to access your email. Wouldn't it be fanstastic if you could access your email in ChatGPT? 
+
+It is possible! 
+
+This repository contains server that gives access to your email by REST API. The ChatGPT can interact with it. This server makes access to **only one** email address. It should be configured in `.env` file. See details below. This server gives access to email reading/sending by auth token that is created when server is starting. 
 
 There are only two endpoints available:
 - `read_email`
 - `send_email`
+
 [Here](https://api.mail4gpt.com/schema/swagger-ui/) is Swagger UI with endpoints docs.
 
-[![](/media/summary.png)](https://chat.openai.com/share/8542aae6-74d7-47d3-bf2c-8f0c022985c3)
+Below is an example chat with email enabled. The chat history is available at https://chat.openai.com/share/8542aae6-74d7-47d3-bf2c-8f0c022985c3
 
-https://chat.openai.com/share/8542aae6-74d7-47d3-bf2c-8f0c022985c3
+![](/media/summary.png)
+
 
 ## Read email 
 
@@ -32,6 +38,10 @@ OpenAPI schema is available at address: https://api.mail4gpt.com/schema/
 OpenAPI schema in Swagger UI is available at address: https://api.mail4gpt.com/schema/swagger-ui/.
 
 ![](/media/configure.gif)
+
+## Deployment
+
+The server is deployed with docker-compose. All configuration files are attached. If you need help with deployment please let us know!
 
 ## 👩‍💼🐦 Connect with Us on Twitter & Linkedin
 
