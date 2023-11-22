@@ -28,7 +28,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-7!8ze0%vz(cx8-+_l2u-h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0", "api.mail4gpt.com"]
+DEPLOY_DOMAIN = os.environ.get("DEPLOY_DOMAIN", "api.mail4gpt.com")
+
+ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0", DEPLOY_DOMAIN]
 
 
 # Application definition
@@ -62,7 +64,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Connect ChatGPT with your mail',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
-    'SERVERS': [{"url": "https://api.mail4gpt.com"}]
+    'SERVERS': [{"url": f"https://{DEPLOY_DOMAIN}"}]
 }
 
 SITE_ID = 1

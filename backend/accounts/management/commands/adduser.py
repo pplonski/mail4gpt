@@ -11,15 +11,15 @@ class Command(BaseCommand):
         tokens = Token.objects.all()
         if tokens.count():
             self.stdout.write(
-                self.style.SUCCESS(tokens[0].key)
+                self.style.SUCCESS(f"Token tokens[0].key")
             )
         else:
             user = User.objects.create_user(
-                username=os.environ.get("USERNAME", "piotr"),
-                email=os.environ.get("EMAIL", "piotr@example.com"),
-                password=os.environ.get("PASSWORD", "super-secret"),
+                username=os.environ.get("EMAIL_ADDRESS", "piotr").split("@")[0],
+                email=os.environ.get("EMAIL_ADDRESS", "piotr@example.com"),
+                password=os.environ.get("EMAIL_PASSWORD", "super-secret"),
             )
             token = Token.objects.create(user=user)
             self.stdout.write(
-                self.style.SUCCESS(token.key)
+                self.style.SUCCESS(f"Token {token.key}")
             )

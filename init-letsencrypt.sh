@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(api.mail4gpt.com) # www.api.mail4gpt.com
+domains=(api.mail4gpt.com) 
 rsa_key_size=4096
 data_path="./docker/nginx/certbot"
 email="" # Adding a valid address is strongly recommended
