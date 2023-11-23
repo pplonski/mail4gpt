@@ -4,13 +4,9 @@ Wouldn't it be fantastic if you could access your email in ChatGPT?
 
 It is possible! 
 
-You can create custom GPT with actions to REST API server that I wrote. The server gives access to your email by REST API. 
+This project introduces a novel integration of email management capabilities into ChatGPT via a custom REST API server. It is specifically designed to augment the functionality of custom GPTs, enabling them to handle email tasks efficiently within the ChatGPT environment.
 
 This server makes access to **only one** email address. It should be configured in `.env` file. See details below. This server gives access to email reading/sending by auth token that is created when server is starting. 
-
-There are only two endpoints available:
-- `read_email`
-- `send_email`
 
 [Here](https://api.mail4gpt.com/schema/swagger-ui/) is Swagger UI with endpoints docs.
 
