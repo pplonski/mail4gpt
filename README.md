@@ -1,7 +1,8 @@
 # Manage your email in ChatGPT ✉️🦜
 
 **UPDATE (14/05/2024):**
-I'm working on framework for [serving Python notebooks as web applications](https://runmercury.com). Recently (May, 2024), we have added option to execute Python notebook as REST API. Thanks to this, notebooks can be easily used in the ChatGPT builder as actions. I wrote example of [custom action for sending emails from ChatGPT](https://runmercury.com/use/gpt-builder-action-send-email/).
+
+I'm working on framework for [serving Python notebooks as web applications](https://runmercury.com). Recently, we have added option to execute Python notebook as REST API. Thanks to this, notebooks can be easily used in the ChatGPT builder as actions. I wrote example of [custom action for sending emails from ChatGPT](https://runmercury.com/use/gpt-builder-action-send-email/).
 
 ---
 
