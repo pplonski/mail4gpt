@@ -6,6 +6,12 @@ I'm working on framework for [serving Python notebooks as web applications](http
 
 ---
 
+**UPDATE (03/06/2024):**
+
+I turned off server with mail4gpt.com so schema in readme is not working.
+
+---
+
 Wouldn't it be fantastic if you could access your email in ChatGPT?
 
 It is possible! 
